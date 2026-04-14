@@ -15,9 +15,7 @@ LIBAUDIT_4.1 {
     auparse_find_field_next;
     auparse_first_field;
     auparse_first_record;
-    _auparse_flush_caches;
     auparse_flush_feed;
-    _auparse_free_interpretations;
     auparse_get_field_int;
     auparse_get_field_name;
     auparse_get_field_num;
@@ -46,8 +44,6 @@ LIBAUDIT_4.1 {
     auparse_interpret_sock_address;
     auparse_interpret_sock_family;
     auparse_interpret_sock_port;
-    _auparse_load_interpretations;
-    _auparse_lookup_interpretation;
     auparse_metrics;
     auparse_new_buffer;
     auparse_next_event;
@@ -87,4 +83,6 @@ LIBAUDIT_4.1 {
     ausearch_cur_event;
     ausearch_next_event;
     ausearch_set_stop;
+  local:
+    _*;
 }

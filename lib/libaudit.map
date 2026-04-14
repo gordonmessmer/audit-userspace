@@ -51,7 +51,6 @@ LIBAUDIT_4.1 {
     audit_number_to_errmsg;
     audit_open;
     audit_operator_to_symbol;
-    _audit_parse_syscall;
     audit_request_features;
     audit_request_rules_list_data;
     audit_request_signal_info;
@@ -65,7 +64,6 @@ LIBAUDIT_4.1 {
     audit_rule_interfield_comp_data;
     audit_rule_io_uringbyname_data;
     audit_rule_syscallbyname_data;
-    __audit_send;
     audit_send;
     audit_set_backlog_limit;
     audit_set_backlog_wait_time;
@@ -83,4 +81,6 @@ LIBAUDIT_4.1 {
     audit_value_needs_encoding;
     get_auditfail_action;
     set_aumessage_mode;
+  local:
+    _*;
 }
